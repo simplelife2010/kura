@@ -132,7 +132,7 @@ public class WireAssetTest {
             Map<String, TypedValue<?>> properties = wireRecords.get(0).getProperties();
 
             assertEquals(4, properties.size());
-            assertEquals(new StringValue("componentName"), properties.get("readChannel1_assetName"));
+            assertEquals(new StringValue("componentName"), properties.get("assetName"));
             assertEquals(new BooleanValue(true), properties.get("readChannel1"));
             assertEquals(new LongValue(1), properties.get("readChannel1_channelId"));
             assertEquals(new LongValue(42), properties.get("readChannel1_timestamp"));
